@@ -1,0 +1,63 @@
+body{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.container{
+ height: 500px;
+ width: 350px;
+ background-color: rgb(51, 51, 152);
+ border: 2px solid gainsboro;
+ border-radius: 10px;
+ box-shadow: 2px 2px 20px gray;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+} 
+.container .display{
+ width: 95%;
+ height: 20%;
+ background-color: rgb(250, 249, 249);
+ margin-top: 15px;
+ border-radius: 5px;
+ font-size: 40px;
+ overflow: scroll;
+}
+.container .display::-webkit-scrollbar {
+  display: none;
+}
+.container .btn span{
+ height: 50px;
+ width: 50px;
+ font-size: 30px;
+ background-color: black;
+ color: white;
+ border-radius: 5px;
+ box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+ margin:6px;
+ display: inline-block;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.container .btn{
+ width: 90%;
+ height: 65%;
+ margin-top: 45px;
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+}
+.container .btn .addition{
+ height: auto;
+ grid-row: span 2;
+ margin-bottom: 25px;
+}
+.container .btn #ac {
+ font-size: 22px;
+}
+
+
+
+

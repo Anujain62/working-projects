@@ -1,0 +1,6 @@
+photo api - https://picsum.photos/v2/list?page=1&limit=10
+
+
+video api - https://images-api.nasa.gov/search?q=earth&media_type=video
+
+
