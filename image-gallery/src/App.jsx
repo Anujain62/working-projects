@@ -3,6 +3,7 @@ import './App.css'
 import Data_fetch from './Image/Data_fetch'
 import ShowImage from './Image/ShowImage'
 import Video_data from './Videos/Video_data'
+import Album_data from './Album/Album_data'
 const App = () => {
 
   let [type, setType] = useState('photos')
@@ -20,7 +21,10 @@ const App = () => {
   useEffect(() => {
     fetch('https://picsum.photos/v2/list?limit=30')
       .then(res => res.json())
-      .then(res => setImages(res));
+      .then(res => {
+        setImages(res) 
+        setAlbums(res)
+      }); 
   }, []);
 
 
@@ -48,7 +52,8 @@ const App = () => {
 
       {type === "photos" && <Data_fetch images={images} setIdx={setIdx}/>}
       {type === "videos" && <Video_data videos={videos} setVideos={setVideos} setIdx={setIdx} />}
-      {type === "albums" && <Data_fetch />}
+      {type === "albums" && <Album_data images={images} setIdx={setIdx} videos={videos} /> }
+      {/* {type==='album' && <Album_data/>} */}
       {idx!==null && type=='photos' && <ShowImage images={images} idx={idx} setIdx={setIdx}/>}
       {/* {idx!==null && type=='albums' && <ShowImage albums={images} idx={idx} setIdx={setIdx}/>} */}
 
