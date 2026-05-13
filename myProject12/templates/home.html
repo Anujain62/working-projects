@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<section class='hero'>
+
+     <h1>Hi, I'm John Doe</h1>
+    <p>
+        A passionate web developer building 
+        modern and responsive web applications.
+    </p>
+    <a href="{% url 'contact' %}">Hire Me</a>
+
+</section>
+
+<section class='projects'>
+    <h2>Fetured Projects</h2>
+    <div class='project-grid'>
+        <div class='project-card'>
+            <img src="{% static 'images/project5.png' %}" alt="Project 1">
+            <h3>Portfolio Website</h3>
+        </div>
+         <div class='project-card'>
+            <img src="{% static 'images/project6.png' %}" alt="Project 2">
+            <h3>E-commerce Store</h3>
+        </div>
+         <div class='project-card'>
+            <img src="{% static 'images/project7.png' %}" alt="Project 3">
+            <h3>Blog Project</h3>
+        </div>
+         <div class='project-card'>
+            <img src="{% static 'images/project8.png' %}" alt="Project 4">
+            <h3>Chat Application</h3>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

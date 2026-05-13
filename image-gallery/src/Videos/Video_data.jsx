@@ -40,8 +40,6 @@ const Video_data = ({videos, setIdx, setVideos}) => {
   <div className="photo">
    {videos.map((video, index) => (
         <div id='video' key={index} style={{ marginBottom: "20px" }}>
-
-          {/* Video Player */}
           {videoUrls[index] && (
             <video width="400" controls>
               <source src={videoUrls[index]} type="video/mp4" />

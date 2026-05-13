@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* for navbar file */
+#navbar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: #FFF0BE;
+}
+#navbar p{
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+#navbar h2{
+  margin-left: 150px;
+}
+@media (max-width:350px) {
+  #navbar h2{
+    margin-left: 40px;
+  }
+  #navbar p{
+    margin-left: 10px;
+  }
+}
+
+/* for options file */
+.options{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #FFF0BE;
+}
+.options .left{
+  width: 15%;
+  height: 100vh;
+  background-color: #FFB399;
+  padding-left: 30px;
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.options .left h3{
+  margin-top: 40px;
+}
+.options .left p{
+  margin: 50px 0px 0px 0px;
+}
+.options .right{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 255px;
+  border-bottom: 2px solid black;
+}
+.options .right p{
+  padding: 10px 0 0 150px;
+}
+
+
+
+/* for admin dashboard file */
+/* *{
+  margin: 0;
+  padding: 0;
+  background-color: #FFF0BE;
+}
+.container{
+  width: 100%;
+  height: auto;
+  margin: 10px;
+} */
+
