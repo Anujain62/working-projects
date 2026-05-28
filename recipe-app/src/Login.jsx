@@ -48,9 +48,9 @@ const Login = ({info,updateInfo}) => {
       <div id='right-login'>
         <div id='detail'>
           <p>UserName</p>
-          <input name='email' value={input.email} onChange={getDetail} type='email' placeholder='abc@gmail.com'/>
+          <input name='email' value={input.email} onChange={getDetail} type='email' placeholder='abc@gmail.com' required/>
           <p>Password</p>
-          <input name='password' value={input.password} onChange={getDetail} type='password' placeholder='Enter password' />
+          <input name='password' value={input.password} onChange={getDetail} type='password' placeholder='Enter password' required/>
         </div>
         <div id='pass'>
           <div>

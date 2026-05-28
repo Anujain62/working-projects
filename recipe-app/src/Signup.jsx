@@ -49,16 +49,16 @@ const Signup = ({info,updateInfo}) => {
         </div>
        <div id='right-signup'>
         <legend>First Name : 
-         <input name='firstName' value={input.firstName} onChange={getDetail} type='text'/>
+         <input name='firstName' value={input.firstName} onChange={getDetail} type='text' required/>
         </legend>
         <legend>Last Name : 
-         <input name='lastName' value={input.lastName} onChange={getDetail} type='text'/>
+         <input name='lastName' value={input.lastName} onChange={getDetail} type='text' required/>
         </legend>
         <legend>Email : 
-          <input name='email' value={input.email} onChange={getDetail} type='email'/>
+          <input name='email' value={input.email} onChange={getDetail} type='email' required/>
         </legend>
         <legend>Password :  
-          <input name='password' value={input.password} onChange={getDetail} type='password'/>
+          <input name='password' value={input.password} onChange={getDetail} type='password' required/>
         </legend>
         <div id='box'>
           <input type='checkBox'/>
